@@ -1,0 +1,88 @@
+{
+  "type" : "record",
+  "name" : "CustProfile",
+  "namespace" : "com.nordstrom.cust.profile",
+  "fields" : [ {
+    "name" : "_id",
+    "type" : "string"
+  }, {
+    "name" : "index",
+    "type" : "long"
+  }, {
+    "name" : "guid",
+    "type" : "string"
+  }, {
+    "name" : "isActive",
+    "type" : "boolean"
+  }, {
+    "name" : "balance",
+    "type" : "string"
+  }, {
+    "name" : "picture",
+    "type" : "string"
+  }, {
+    "name" : "age",
+    "type" : "long"
+  }, {
+    "name" : "eyeColor",
+    "type" : "string"
+  }, {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "gender",
+    "type" : "string"
+  }, {
+    "name" : "company",
+    "type" : "string"
+  }, {
+    "name" : "email",
+    "type" : "string"
+  }, {
+    "name" : "phone",
+    "type" : "string"
+  }, {
+    "name" : "address",
+    "type" : "string"
+  }, {
+    "name" : "about",
+    "type" : "string"
+  }, {
+    "name" : "registered",
+    "type" : "string"
+  }, {
+    "name" : "latitude",
+    "type" : "double"
+  }, {
+    "name" : "longitude",
+    "type" : "double"
+  }, {
+    "name" : "tags",
+    "type" : {
+      "type" : "array",
+      "items" : "string"
+    }
+  }, {
+    "name" : "friends",
+    "type" : {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "friends",
+        "fields" : [ {
+          "name" : "id",
+          "type" : "long"
+        }, {
+          "name" : "name",
+          "type" : "string"
+        } ]
+      }
+    }
+  }, {
+    "name" : "greeting",
+    "type" : "string"
+  }, {
+    "name" : "favoriteFruit",
+    "type" : "string"
+  } ]
+}

@@ -6,6 +6,7 @@ This is a tool to profile your incoming data, check if it adheres to registered 
 
 * Datavalidator [notebook tool](data-validator.ipynb)
 * Sample dataset [dataset](generated.json)
+* Sample dataset [schema](schema.avsc)
 * Sample [result report](output/data-validator.ipynb)
 * [Runner script](papermill_notebook_runner.py)
 
