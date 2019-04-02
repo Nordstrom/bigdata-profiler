@@ -28,6 +28,8 @@ Take a look at [this](https://github.com/Nordstrom/bigdata-profiler#run-instruct
 
 ### What does the profiler exactly do ?
 
+![workflow](flow.jpeg)
+
 * First we launch the jupyter notebook which is scala based.
 * We configure the notebook to submit a spark job to an external spark cluster. This is where we set details like number of cores required, memory and some dependencies like `spark-avro` and `datadog-statsd` client. You should be able to use any `spark-submit` configuration here. 
 * Next we define default values for changing parameters. These values will be updated by `papermill` everytime the notebook is run based on what parameters are passed in using the `papermill` script. 
