@@ -44,7 +44,7 @@ There are several pieces involved.
 * First install jupyter notebooks. Install instructions [here](https://jupyter.org/install).
 * Next install spark magic. Install instructions [here](https://github.com/jupyter-incubator/sparkmagic)
 * Configure sparkmagic with your own Apache Livy endpoints. Config file should look like [this](https://github.com/jupyter-incubator/sparkmagic/blob/634ee0d356b8e9685fe006739b7543149cfef374/sparkmagic/example_config.json)
-* Install papermill from source after adding spark-magic kernels.Clone papermill project from [here](https://github.com/nteract/papermill). 
+* Install papermill from source after adding spark-magic kernels. Clone papermill project from [here](https://github.com/nteract/papermill). 
 * Update the [translators file](https://github.com/nteract/papermill/blob/master/papermill/translators.py) to add sparkmagic kernels at the very end of the file. 
 
 ```python
@@ -54,5 +54,10 @@ papermill_translators.register("sparkrkernel", RTranslator)
 ```
 
 * Next install schema repo. Install instructions [here](https://github.com/schema-repo/schema-repo).
+
+
+## More details
+
+Find more details on this [guide](guide.md)
 
 That should be it. Enjoy Profiling !!
