@@ -4,13 +4,13 @@ This document walks through how the profiler profiles the data.
 
 ### Whats expected from the end user ?
 
-End user is expected to pass in the following information: 
-All the information needs to be translated to language specific variables. 
+End user is expected to pass in the following configuration details for the run: 
+The infomation is provided in the form of JSON when the program runs. This json passed is then translated to language specific variables.
 
-We will be moving this section to being a YAML configuration that can be externally managed in the near future. 
+#### Configuration description
 
 ```bash
-"dataFormat":"dataformat"
+"dataFormat":"Whats the format of the data ? Currently supported formats include JSON, CSV and PARQUET"
 "inputDataLocation":"s3 or hdfs location of data"
 "appName":"Meaningful name to this application"
 "schemaRepoUrl":"host name of schema repository"
