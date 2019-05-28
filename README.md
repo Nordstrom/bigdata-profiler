@@ -33,6 +33,12 @@ Supports both ANSI-SQL as well as Hive QL. List of all supported SQL functions c
 
 ## Run Instructions
 
+All one has to do is execute a python script `papermill_notebook_runner.py`. This script takes in the following arguments in order:
+
+* Path to the notebook to be run. 
+* Path to the output notebook.
+* JSON configuration that will drive the notebook. 
+
 ```bash
 python papermill_notebook_runner.py data-validator.ipynb output/data-validator.ipynb '{"dataFormat":"json","inputDataLocation":"s3a://bucket/prefix/generated.json","appName":"cust-profile-data-validation","schemaRepoUrl":"http://schemarepohostaddress","scheRepoSubjectName":"cust-profile","schemaVersionId":"0","customQ1":"select CAST(count(_id) - count(distinct _id) as Long) as diff from dataset","customQ1ResultThreshold":0,"customQ1Operator":"=","customQ2":"select CAST(length(phone) as Long) from dataset","customQ2ResultThreshold":17,"customQ2Operator":"=","customQ3":"select CAST(count(distinct gender) as Long) from dataset","customQ3ResultThreshold":3,"customQ3Operator":"<="}'
 ```
