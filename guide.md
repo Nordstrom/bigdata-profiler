@@ -5,6 +5,9 @@ This document walks through how the profiler profiles the data.
 ### Whats expected from the end user ?
 
 End user is expected to pass in the following information: 
+All the information needs to be translated to language specific variables. 
+
+We will be moving this section to being a YAML configuration that can be externally managed in the near future. 
 
 ```bash
 "dataFormat":"dataformat"
