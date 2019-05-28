@@ -4,8 +4,12 @@ This document walks through how the profiler profiles the data.
 
 ### Whats expected from the end user ?
 
-End user is expected to pass in the following configuration details for the run: 
+End user is expected to pass in the a configuration which drives the utility.
+
 The infomation is provided in the form of JSON when the program runs. This json passed is then translated to language specific variables.
+
+An example on how to run this program by passing the JSON configuration can be seen [here](https://github.com/Nordstrom/bigdata-profiler#run-instructions).
+
 
 #### Configuration description
 
@@ -26,8 +30,6 @@ The infomation is provided in the form of JSON when the program runs. This json 
 "customQ3ResultThreshold": 0,
 "customQ3Operator":" = | > | < | <= | >= "
 ```
-
-Take a look at [this](https://github.com/Nordstrom/bigdata-profiler#run-instructions) for a live example
 
 ### What does the profiler exactly do ?
 
